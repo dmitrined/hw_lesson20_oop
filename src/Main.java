@@ -33,6 +33,7 @@ public class Main {
         for (Programmer programmer : programmersWithTask) {
             System.out.println("- " + programmer.getName());
         }
+        System.out.println("---КОНЕЦ---");
 
 
     }

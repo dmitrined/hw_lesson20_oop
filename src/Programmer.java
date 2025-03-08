@@ -28,7 +28,7 @@ public class Programmer {
     }
 
     public boolean hasTask(Task task) {
-        return hasTask();
+        return taskList.contains(task);
     }
 
     public boolean hasTask() {
