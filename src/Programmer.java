@@ -27,6 +27,10 @@ public class Programmer {
         taskList.remove(task);
     }
 
+    public boolean hasTask(Task task) {
+        return hasTask();
+    }
+
     public boolean hasTask() {
         return !taskList.isEmpty();
     }
@@ -45,6 +49,7 @@ public class Programmer {
 
 
     }
+
 
     @Override
     public String toString() {
