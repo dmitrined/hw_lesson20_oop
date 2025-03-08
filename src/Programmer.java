@@ -27,13 +27,26 @@ public class Programmer {
         taskList.remove(task);
     }
 
+    public boolean hasTask() {
+        return !taskList.isEmpty();
+    }
+
+    public boolean hasTaskWithNumber(int number) {
+        for (Task task : taskList) {
+            if (task.getNumber() == number) {
+                return true;
+            }
+        }
+        return false;
+    }
 
     @Override
     public String toString() {
         return String.format("Программист: %s , Задача: %s", name, taskList);
     }
-}
 
+
+}
 
 
 

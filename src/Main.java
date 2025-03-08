@@ -12,6 +12,10 @@ public class Main {
         p2.addTask(t3);
         System.out.println("---удаляем задачу---");
         p1.removeTask(t1);
-
+        System.out.println("----есть ли у программиста задача---");
+        System.out.println(p1.hasTask());
+        System.out.println("----есть ли у программиста задача с заданным номером---");
+        System.out.println(p1.hasTaskWithNumber(2));
     }
+
 }
