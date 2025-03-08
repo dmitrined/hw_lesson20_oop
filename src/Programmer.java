@@ -1,0 +1,30 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class Programmer {
+    private String name;
+    private List<Task> taskList;
+
+    public Programmer(String name) {
+        this.name = name;
+        this.taskList = new ArrayList<>();
+
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public List<Task> getTaskList() {
+        return taskList;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("Программист: %s , Задача: %s", name, taskList);
+    }
+}
+
+
+
+
