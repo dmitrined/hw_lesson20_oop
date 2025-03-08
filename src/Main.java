@@ -19,6 +19,13 @@ public class Main {
         System.out.println("---список всех задач программиста---");
         System.out.println(p1.getAllTasks());
         System.out.println(p2.getAllTasks());
+
+        ProgrammerList programmerList = new ProgrammerList();
+        programmerList.addProgrammer(p1);
+        programmerList.addProgrammer(p2);
+        System.out.println("Список всех программистов: " + programmerList.getTotalProgrammers());
+
+
     }
 
 }
