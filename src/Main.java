@@ -16,6 +16,9 @@ public class Main {
         System.out.println(p1.hasTask());
         System.out.println("----есть ли у программиста задача с заданным номером---");
         System.out.println(p1.hasTaskWithNumber(2));
+        System.out.println("---список всех задач программиста---");
+        System.out.println(p1.getAllTasks());
+        System.out.println(p2.getAllTasks());
     }
 
 }

@@ -39,6 +39,11 @@ public class Programmer {
         }
         return false;
     }
+    public List<Task> getAllTasks() {
+       return new ArrayList<>(taskList);
+
+
+    }
 
     @Override
     public String toString() {
