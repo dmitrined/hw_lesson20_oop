@@ -19,6 +19,15 @@ public class Programmer {
         return taskList;
     }
 
+    public void addTask(Task task) {
+        taskList.add(task);
+    }
+
+    public void removeTask(Task task) {
+        taskList.remove(task);
+    }
+
+
     @Override
     public String toString() {
         return String.format("Программист: %s , Задача: %s", name, taskList);
